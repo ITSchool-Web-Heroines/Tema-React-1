@@ -25,6 +25,25 @@ Folosește React pentru a afișa următorul cod în elementul cu ID #app
 
 export default function App() {
     return (
-        <div></div>
+        <div className="vh-100 d-flex flex-column">
+            <header className="navbar bg-primary bg-gradient">
+                <div className="container-fluid">
+                    <h1 className="navbar-brand mb-0 text-white">Tema React din</h1>
+                </div>
+            </header>
+            <main className="container my-5 flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                <ul className="list-group">
+                    <li className="list-group-item">
+                        <span className="fw-bold">Lista de cumpărături</span>
+                    </li>
+                    <li className="list-group-item">Pâine</li>
+                    <li className="list-group-item">Lapte</li>
+                    <li className="list-group-item">Ciocolată</li>
+                    <li className="list-group-item">Mere</li>
+                    <li className="list-group-item">Miere</li>
+                    <li className="list-group-item">Mandarine</li>
+                </ul>
+            </main>
+        </div>
     )
 }
