@@ -1,4 +1,4 @@
-# Tema Formular
+# Tema React
 
 1. Fă-ți propriul fork. Doar din proiectul principal. **O singură dată**. Fork-ul trebuie făcut pe contul tău de GitHub.
 2. Clonează fork-ul tău pe PC-ul (inclusiv Mac) propriu
