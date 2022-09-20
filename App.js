@@ -28,7 +28,7 @@ export default function App() {
         <div className="vh-100 d-flex flex-column">
             <header className="navbar bg-primary bg-gradient">
                 <div className="container-fluid">
-                    <h1 className="navbar-brand mb-0 text-white">Tema React din</h1>
+                    <h1 className="navbar-brand mb-0 text-white">Tema React</h1>
                 </div>
             </header>
             <main className="container my-5 flex-grow-1 d-flex flex-column align-items-center justify-content-center">
