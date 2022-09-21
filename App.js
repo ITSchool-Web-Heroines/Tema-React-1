@@ -1,4 +1,5 @@
 /*
+
 Folosește React pentru a afișa următorul cod în elementul cu ID #app
 
 <div class="vh-100 d-flex flex-column">
@@ -23,8 +24,27 @@ Folosește React pentru a afișa următorul cod în elementul cu ID #app
 </div>
 */
 
-export default function App() {
+const listgroup = [
+    "Pâine",
+    "Lapte",
+    "Ciocolată",
+    "Mere",
+    "Miere",
+    "Mandarine"
+  ];
+  export default function App() {
     return (
-        <div></div>
-    )
-}
+      <div className="App">
+        <h1>Tema React </h1>
+        <span>
+          <h2> Lista de cumparaturi</h2>{" "}
+        </span>
+        <ul>
+            {listgroup.map((cumparaturi) => (
+              <li> {cumparaturi} </li>
+            ))}
+          </ul>
+      </div>
+    );
+  }
+  
