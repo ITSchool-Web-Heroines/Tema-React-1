@@ -22,21 +22,6 @@ Folosește React pentru a afișa următorul cod în elementul cu ID #app
     </main>
 </div>
 */
-// import { createElement } from "react";
-//   const renderShoppingList = createElement(
-//     "ul",
-//     { className: "list-group" },
-//     shoppingListItems.map(shoppingListItem => (
-//       <li
-//         className="list-group-item"
-//         key={shoppingListItem}
-//         id={shoppingListItem}
-//       >
-//         {shoppingListItem}
-//       </li>
-//     ))
-//   );
-
 export default function App() {
   const shoppingListItems = [
     "Pâine",
@@ -46,7 +31,6 @@ export default function App() {
     "Miere",
     "Mandarine",
   ];
-
   return (
     <div className="vh-100 d-flex flex-column">
       <header className="navbar bg-primary bg-gradient">
@@ -60,11 +44,7 @@ export default function App() {
             <span className="fw-bold">Lista de cumpărături</span>
           </li>
           {shoppingListItems.map(shoppingListItem => (
-            <li
-              className="list-group-item"
-              key={shoppingListItem}
-              id={shoppingListItem}
-            >
+            <li className="list-group-item" key={shoppingListItem}>
               {shoppingListItem}
             </li>
           ))}
