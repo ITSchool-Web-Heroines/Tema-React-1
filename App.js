@@ -24,7 +24,6 @@ Folosește React pentru a afișa următorul cod în elementul cu ID #app
 */
 export default function App() {
   const shoppingListItems = [
-    "Lista de cumpărături",
     "Pâine",
     "Lapte",
     "Ciocolată",
@@ -41,17 +40,14 @@ export default function App() {
       </header>
       <main className="container my-5 flex-grow-1 d-flex flex-column align-items-center justify-content-center">
         <ul className="list-group">
-          {shoppingListItems.map(shoppingListItem =>
-            shoppingListItem.length === 20 ? (
-              <li className="list-group-item" key={shoppingListItem}>
-                <span className="fw-bold">{shoppingListItem}</span>
-              </li>
-            ) : (
-              <li className="list-group-item" key={shoppingListItem}>
-                {shoppingListItem}
-              </li>
-            )
-          )}
+          <li className="list-group-item">
+            <span className="fw-bold">Lista de cumpărături</span>
+          </li>
+          {shoppingListItems.map(shoppingListItem => (
+            <li className="list-group-item" key={shoppingListItem}>
+              {shoppingListItem}
+            </li>
+          ))}
         </ul>
       </main>
     </div>
