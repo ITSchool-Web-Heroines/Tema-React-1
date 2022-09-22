@@ -47,7 +47,7 @@ export default function App() {
             <span className="fw-bold">Lista de cumpărături</span>
           </li>
           {products.map((shopping) => (
-            <li key={shopping}> {shopping} </li>
+            <li className="shooping" key={shopping}> {shopping} </li>
           ))}
         </ul>
       </main>
